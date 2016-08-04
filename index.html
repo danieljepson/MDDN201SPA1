@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Template using a fullpage.js plugin</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage auto-height example." />
+    <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,auto-height,full-screen" />
+    <meta name="Resource-type" content="Document" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                verticalCentered: true,
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+                sectionsColor: ['#262626', '#8c34c7', '#2049df', '#00d9ff']
+            });
+        });
+    </script>
+
+    <style>
+    /* in file css styling */
+      .myContent{
+        min-height: 300px;
+        overflow: auto;
+      }
+      .row{width:!100%;height:auto;margin:30px;float:left;}
+      .splitLeft{
+        height:auto;
+        width:25%;
+        float:left;
+      }
+      .splitRight{
+        height:auto;
+        width:75%;
+        /*background-color: grey;*/
+        float:left;
+      }
+      .imageBox{
+        width:100%;
+        height:300px;
+        background-color: #fff;
+
+      }
+      p{
+        font-size: 22px;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 20px;
+        color:#e6e6e6;
+		padding:50px;
+      }
+    </style>
+
+</head>
+	<body>
+
+	  <ul id="menu"><!-- menu items -->
+		  <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Summary</a></li>
+		  <li data-menuanchor="secondPage"><a href="#secondPage">Monday</a></li>
+		  <li data-menuanchor="3rdPage"><a href="#3rdPage">Friday</a></li>
+		  <li data-menuanchor="4thPage"><a href="#4thPage">Saturday</a></li>
+		  <!-- add another li element to create a new menu tab -->
+	  </ul>
+
+	<div id="fullpage">
+		<!-- section starts -->
+		<div class="section" id="section0">
+		   <div class="myContent">
+			  <h1>Ethernet City</h1>
+			  <p>The way that I see the city to be an infrastructure is the roads and paths that connect each city to city, suburb to suburb, building to building like the cables of ethernet. The similarities continue when there is a lot of traffic (car or internet), the speed slows down with more people using it so I wanted to capture this to show how similar they are. The images below are taken from google maps with the 'traffic' option on and then some post production and the results make the city of Wellington look like connection of the internet. As you can see on the images there is a key on the bottom which tells you how fast or slow the traffic is moving which creates a cool looking image which still displays the relevant information. </p>
+
+			</div>
+		</div>
+		<!-- section ends -->
+		<!-- section starts -->
+		<div class="section fp-auto-height" id="section1">
+			<div class="slide" id="slide1"><!-- horizontal slide -->
+			  <div class="myContent">
+			  
+				  <h1>Monday 8am</h1>
+				  <img src="img/M8am.jpg" height="500px">
+
+				</div>
+			</div>
+			<div class="slide" id="slide2"><!-- second horizontal slide -->
+
+				<h1>Monday 12pm</h1>
+				<img src="img/M12pm.jpg" height="500px">
+
+			</div>
+			<div class="slide" id="slide3"><!--  horizontal slide -->
+
+				<h1>Monday 4pm</h1>
+				<img src="img/M4pm.jpg" height="500px">
+
+
+			</div>
+			<div class="slide" id="slide4"><!--  horizontal slide -->
+
+				<h1>Monday 8pm</h1>
+				<img src="img/M8pm.jpg" height="500px">
+
+			</div>                
+		</div>
+		<!-- section ends -->
+		<!-- section starts -->
+		<div class="section fp-auto-height" id="section1">
+			<div class="slide" id="slide1"><!-- horizontal slide -->
+			  <div class="myContent">
+			  
+				  <h1>Friday 8am</h1>
+				  <img src="img/F8am.jpg" height="500px">
+
+				</div>
+			</div>
+			<div class="slide" id="slide2"><!-- second horizontal slide -->
+
+				<h1>Friday 12pm</h1>
+				<img src="img/F12pm.jpg" height="500px">
+
+			</div>
+			<div class="slide" id="slide3"><!--  horizontal slide -->
+
+				<h1>Friday 4pm</h1>
+				<img src="img/F4pm.jpg" height="500px">
+
+			</div>
+			<div class="slide" id="slide4"><!--  horizontal slide -->
+
+				<h1>Friday 8pm</h1>
+				<img src="img/F8pm.jpg" height="500px">
+
+			</div>
+		</div>
+		<!-- section ends -->
+		<!-- section starts -->
+		<div class="section fp-auto-height" id="section1">
+			<div class="slide" id="slide1"><!-- horizontal slide -->
+			  <div class="myContent">
+			  
+				  <h1>Saturday 8am</h1>
+				  <img src="img/S8am.jpg" height="500px">
+
+				</div>
+			</div>
+			<div class="slide" id="slide2"><!-- second horizontal slide -->
+
+				<h1>Sarurday 12pm</h1>
+				<img src="img/S12pm.jpg" height="500px">
+
+			</div>
+			<div class="slide" id="slide3"><!--  horizontal slide -->
+
+				<h1>Saturday 4pm</h1>
+				<img src="img/S4pm.jpg" height="500px">
+
+			</div>
+			<div class="slide" id="slide4"><!--  horizontal slide -->
+
+				<h1>Saturday 8pm</h1>
+				<img src="img/S8pm.jpg" height="500px">
+
+			</div>
+		</div>
+		<!-- section ends -->
+	</div>
+
+</body>
+</html>
